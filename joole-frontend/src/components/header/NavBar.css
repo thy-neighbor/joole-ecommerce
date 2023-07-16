@@ -41,24 +41,26 @@ p.tag-line {
 }
 
 .profile-img{
-    vertical-align: middle;
-    width: 75px;
-    height: 75px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
 }
 
 .profile-img-container{
-    padding-left: 20px;
+    width: 65px;
+    height: 65px;
 }
 
 .small-logo{
-    width:70%;
+    width:30%;
+    margin-right: 100%;
 }
 
 .big-logo{
-    
+    width: 15%;
 }
 
 .small-header{
-    padding-top: 2.5rem;
+    padding: 2.5rem 10px;
 }

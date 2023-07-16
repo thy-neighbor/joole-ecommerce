@@ -7,6 +7,7 @@ export const Dropdown = (props) => {
     //props.values should be a list of objects that have the master product types(ex. mechanical)
     //let list=["Mechanical","Electronic","Stone Age", "Ice Age"];
     const list = props.options ? props.options : [{type:"Mechanical", parentType:null}];
+    
     let productTypes=list.map((value,key) =>{
         if(value.parentType===null){
             return(<span class="dropdown-item" onClick={()=>{props.setSearchFocus(value.type)}} key={key}>{value.type}</span>);
@@ -41,11 +42,3 @@ const mapStateToProps = state =>{
 };
 
 export default connect(mapStateToProps,{setSearchFocus})(Dropdown);
-
-//{productTypes}
-/**
-                <a class="dropdown-item" href="#">Hello</a>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a> 
- */

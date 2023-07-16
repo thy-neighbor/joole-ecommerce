@@ -1,30 +1,45 @@
 button#dropdownMenuButton {
-    padding: 0px;
-    background-color: #CCCFCE;
+    background-color: transparent;
     color: black;
     border: none;
     width: 21%;
     min-width: fit-content;
     font-size:73%;
     height: -webkit-fill-available;
+    border-right: solid 1px white;
+
 }
+
 button[aria-expanded="true"]{
     border:none;
-  }
-  .search-area {
+}
+
+.search-area {
     border: none;
     padding: 0px 0px 0px 10px;
     width: 70%;
+    background-color: transparent;
 }
 
 .search-form-group {
-    border: 1.5px solid gray;
+    /*border: 1.5px solid gray;
     border-radius: 5px;
     background-color: white;
     height: 35px;
+    width: 100%;*/
+
     width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
 }
 
-button.btn.btn-outline-light {
+.btn-search{
     height: 100%;
+    color: white;
 }

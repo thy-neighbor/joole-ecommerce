@@ -7,7 +7,6 @@ import TechSpecs from './tech-specs';
 import ProductCard from './product-card';
 
 
-
 class ProductPage extends Component{
     constructor(props){
        super(props);
@@ -19,12 +18,11 @@ class ProductPage extends Component{
    }
 
 
-
    render(){
        let products;
        if(this.props.searchFilter && this.props.products){
            const filter=this.props.searchFilter;
-        products= this.props.products.filter((product) => {
+            products= this.props.products.filter((product) => {
             let {modelYear,airFlow,powerMax,soundAtMaxSpeed,fanSweepDiameter} = product;
             modelYear = parseInt(modelYear);
             const airflowVal = parseInt(airFlow);
@@ -60,7 +58,7 @@ class ProductPage extends Component{
        
        
         const productCards=products?products.map((product, index) => 
-        <ProductCard data={product} key={index} /> //add check event here checkEvent={}
+        <ProductCard data={product} key={index} /> 
         
         ) : null;
         

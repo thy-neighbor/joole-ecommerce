@@ -23,10 +23,12 @@ export class ProductCard extends React.Component {
 
         return(
             <div className="col-3 justify-content-center">
-                <table>
+                <table className="product-card__table app__card">
                     <tr>
                         <th>
-                            <img className="table-img" src={image} alt="product"/>
+                            <div className='table-img__container'>
+                                <img className="table-img" src={image} alt="product"/>
+                            </div>
                             <div>{manufacturer}</div>
                             <div>{series}</div>
                             <div>{model}</div>
@@ -41,20 +43,9 @@ export class ProductCard extends React.Component {
                             <div>{fanSweepDiameter}" fan sweep diameter</div>
                         </td>
                     </tr>
-                    <tr>
-                        <td>Company</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" checked={this.state.checked} onChange={()=>{
-                                //this.props.checkEvent(!this.state.checked)
-                                this.toggleCheck(!this.state.checked)}}/> Compare
-                        </td>
-                    </tr>
                 </table>
             </div>
             
-
         );
     }
 };

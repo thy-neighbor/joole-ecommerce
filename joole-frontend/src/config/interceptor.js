@@ -6,7 +6,8 @@ export const setupAxiosInterceptor = (store, pathname) =>{
     axios.interceptors.request.use(
         config => {
             const user = loadUser();
-         console.log("HERE I AM INSIDE INTERCEPTOR  user:",user && pathname!=="/login" && pathname!=="/signup");
+            console.log("HERE I AM INSIDE INTERCEPTOR  user: ", user);
+            console.log("HERE I AM INSIDE INTERCEPTOR  user:", pathname);
             if(user && pathname!=="/login" && pathname!=="/signup"){
                 
                 const token = user.jwt;
