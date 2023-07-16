@@ -5,10 +5,11 @@ Joole is a  ecommerce project that showcases the integration of user JWT authent
 ## Screenshots
 
 ### Desktop
-![Main page](public/search-screenshot.JPG)
+![Main page](joole-frontend/public/search-screenshot.JPG)
 
 
-![Main page](public/search-results-screenshot.JPG)
+
+![Main page](joole-frontend/public/search-results-screenshot.JPG)
 
 
 ## Technology Used
