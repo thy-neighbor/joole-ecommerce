@@ -1,6 +1,6 @@
 # Joole Ecommerce Concept
 
-Joole is a  ecommerce project that showcases the integration of user JWT authentication, dynamic product loading from a database, search &filtering techniques, and a simple yet effective user interface to demonstrate the connection between the frontend and the robust backend.
+Joole is a  ecommerce project that showcases the integration of user JWT authentication, dynamic product loading from a database, search & filtering techniques, and a simple yet effective user interface to demonstrate the connection between the frontend and the robust backend.
 
 ## Screenshots
 
